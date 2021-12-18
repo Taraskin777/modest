@@ -24,7 +24,7 @@ body {
     flex-wrap: wrap;
     margin-left: -15px;
     margin-right: -15px;
-    
+    justify-content: space-between;
 }
 
 [class*="col-"] {
@@ -193,7 +193,7 @@ font-size: 14px;
     }
 
     .search {
-        width: 170px;
+        width: 160px;
         height: 27px;
         border: solid 2px #a4aead;
         line-height: 23px;
@@ -204,7 +204,7 @@ font-size: 14px;
     
 
     input {
-        width: 140px;
+        width: 130px;
         background-color: #1d2126;
         border: none;
     }
