@@ -221,7 +221,7 @@ input {
 }
 
 .buttonsearch {
-    background-image: url(/image/search.png);
+    background-image: url(image/search.png);
     width: 24px;
     height: 23px;
     background-color: #1d2126;
@@ -236,7 +236,7 @@ input {
 /* main - 1*/
 
 .main-1 {
-    background-image: url(/image/leaf.png);
+    background-image: url(image/leaf.png);
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
@@ -349,28 +349,28 @@ height: 660px;
 }
 
 .facebook {
-    background-image: url(/image/facebook.png);
+    background-image: url(image/facebook.png);
     background-position: center;
     
 }
 
 .twitter {
-    background-image: url(/image/twitter.png);
+    background-image: url(image/twitter.png);
     background-position: center;
 }
 
 .google {
-    background-image: url(/image/google.png);
+    background-image: url(image/google.png);
     background-position: center;
 }
 
 .earth {
-    background-image: url(/image/earth.png);
+    background-image: url(image/earth.png);
     background-position: center;
 }
 
 .be {
-    background-image: url(/image/be.png);
+    background-image: url(image/be.png);
     background-position: center;
 }
 
