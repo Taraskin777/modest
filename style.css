@@ -105,6 +105,66 @@ body {
     }
 }
 
+.col-sm-1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+}
+
+.col-sm-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+}
+
+.col-sm-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.col-sm-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
+
+.col-sm-5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+}
+
+.col-sm-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.col-sm-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+}
+
+.col-sm-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+}
+
+.col-sm-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+.col-sm-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+}
+
+.col-sm-11 {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+}
+
+.col-sm-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
 /* laptop - md */
 
 @media (min-width:992px) {
@@ -113,6 +173,59 @@ body {
 
     }
 }
+
+.col-md-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+}
+
+.col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+
+}
+.col-md-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
+
+.col-md-5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+}
+
+.col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.col-md-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+}
+.col-md-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+}
+
+.col-md-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+.col-md-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+}
+.col-md-11 {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+}
+.col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+
 
 /* desktop - lg */
 
@@ -163,6 +276,10 @@ body {
     .menu {
         overflow: scroll;
     }
+    .we-are-modest {
+        flex-direction: column;
+    }
+
 }
 
 .header {
@@ -266,11 +383,12 @@ height: 660px;
 
 .welcome-button {
     margin-left: -15px;
+    display: flex;
     
 }
 .welcomebut {
     height: 44px;
-    width: 124px;
+    max-width: 124px;
     background: inherit;
     color: white;
     border: 2px solid white;
@@ -295,6 +413,7 @@ height: 660px;
 .we-are-modest {
     display: flex;
     height: 612px;
+    
 }
 
 
@@ -398,6 +517,7 @@ height: 660px;
 .title-of-number {
     font-size: 18px;
     font-weight: bold;
+    
     
 }
 
