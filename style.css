@@ -276,9 +276,7 @@ body {
     .menu {
         overflow: scroll;
     }
-    .we-are-modest {
-        flex-direction: column;
-    }
+   
 
 }
 
@@ -350,9 +348,9 @@ input {
 }
 
 
-/* main - 1*/
+/* main*/
 
-.main-1 {
+.slider {
     background-image: url(image/leaf.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -365,7 +363,7 @@ height: 660px;
     height: 185px;
     padding-top: 225px;
     padding-bottom: 250px;
-    margin-left: -15px;
+    
 
 }
 
@@ -404,11 +402,9 @@ height: 660px;
 }
 
 .video {
-
     margin-left: 10px;
 }
 
-/* main-2 */
 
 .we-are-modest {
     display: flex;
@@ -447,10 +443,7 @@ height: 660px;
 .span {
     font-weight: bolder;
 }
-.left {
-    margin-left: -15px;
-   
-}
+
 
 .right {
     margin-right: -15px;
@@ -493,14 +486,6 @@ height: 660px;
     background-position: center;
 }
 
-.number {
-    margin-top: 178px;
-}
-
-.green-num {
-    
-    
-}
 
 .green-num > p {
    width: 50px;
