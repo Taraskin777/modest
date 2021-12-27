@@ -27,6 +27,7 @@ body {
     justify-content: space-between;
     align-content: center;
     align-items: center;
+   
 }
 
 [class*="col-"] {
@@ -104,6 +105,8 @@ body {
         max-width: 720px;
     }
 
+
+
     .col-sm-1 {
         flex: 0 0 8.33333%;
         max-width: 8.33333%;
@@ -174,6 +177,8 @@ body {
         max-width: 960px;
 
     }
+
+
 
     .col-md-2 {
         flex: 0 0 16.66667%;
@@ -287,12 +292,22 @@ body {
         display: none;
     }
 
+    .row {
+        justify-content: center;
+    }
+    
+}
+
+@media (max-width:1210px) {
     .menu {
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
         overflow: scroll;
     }
-
-
 }
+
+
 
 .header {
     background-color: #1d2126;
@@ -303,7 +318,6 @@ body {
 .menu {
     display: flex;
     justify-content: space-between;
-
 }
 
 .menu li a {
@@ -327,7 +341,7 @@ body {
 
 .search {
     display: flex;
-    max-width: 160px;
+    width: 160px;
     height: 27px;
     border: solid 2px #3c4147;
     align-items: center;
@@ -375,7 +389,7 @@ input {
 }
 
 .welcome {
-   
+
     padding-top: 225px;
     padding-bottom: 250px;
 
@@ -426,9 +440,8 @@ input {
 
 .we-are-modest {
     display: flex;
-    max-height: 612px;
-    padding-bottom: 100px;
-
+    padding-bottom: 70px;
+    
 }
 
 
@@ -482,6 +495,9 @@ input {
     cursor: pointer;
 }
 
+.social {
+    margin-bottom: 30px;
+}
 .facebook {
     background-image: url(image/facebook.png);
     background-position: center;
@@ -536,6 +552,7 @@ input {
     font-size: 16px;
     color: #c6c7c8;
     line-height: 1.5;
+    margin-bottom: 15px;
 }
 
 /* .meet-the-team */
@@ -556,8 +573,8 @@ input {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 262px;
-    height: 302px;
+    width: 100%;
+    /* height: 302px; */
     background-color: white;
     opacity: 0.5;
     display: none;
@@ -587,7 +604,7 @@ input {
 .photo:hover>.team-soc-but {
     display: block;
     display: flex;
-   
+
 }
 
 
@@ -643,6 +660,7 @@ input {
     color: white;
     margin-top: 80px;
     margin-bottom: 60px;
+   
 
 }
 
@@ -650,18 +668,18 @@ input {
     position: relative;
     margin-bottom: 15px;
    
+
 }
 
 .image:hover {
     opacity: 0.5;
     transition: 0.5s;
-    
+
 }
 
 .image:hover>.under-text {
     display: block;
-   
-    
+
 }
 
 .under-text {
@@ -671,27 +689,25 @@ input {
     padding-left: 20px;
     position: absolute;
     color: white;
-    
-    
     bottom: 0;
     background-color: #1d2126;
     font-size: 18px;
     font-weight: bold;
     display: none;
-    
+
+
 }
 
 .butlove {
-   display: flex;
+    display: flex;
     padding-top: 45px;
     padding-bottom: 50px;
-   
     justify-content: center;
 }
 
 .lovely-button {
-    width: 150px;      
-    height: 44px;     
+    width: 150px;
+    height: 44px;
     background: inherit;
     color: white;
     border: 2px solid white;
@@ -702,4 +718,3 @@ input {
 
 
 }
-
