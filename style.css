@@ -664,17 +664,25 @@ input {
 
 }
 
-.image {
-    position: relative;
-    margin-bottom: 15px;
-   
+.lovely-image {
+
 
 }
 
-.image:hover {
+.image {
+    position: relative;
+    margin-bottom: 15px;
+    
+}
+
+.lovely-image:hover {
     opacity: 0.5;
     transition: 0.5s;
 
+}
+
+.image:hover>.plus {
+    display: block;
 }
 
 .image:hover>.under-text {
@@ -682,6 +690,15 @@ input {
 
 }
 
+
+.plus {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    
+}
 .under-text {
     width: 360px;
     height: 60px;
