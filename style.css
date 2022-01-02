@@ -500,7 +500,6 @@ input {
 .facebook {
 	background-image: url(image/facebook.png);
 	background-position: center;
-
 }
 
 .twitter {
@@ -841,4 +840,51 @@ input {
 	color: white;
 	border: none;
 	transition: 0.5s;
+}
+
+.footer {
+	background-color: #3c4147;
+	height: 85px;
+	color: rgba(255, 255, 255, 0.788);
+	line-height: 85px;
+}
+
+.copyright {
+	font-size: 14px;
+	
+}
+
+
+.footer-socbut {
+	background: inherit;
+width: 25px;
+height: 25px;
+border: none;
+cursor: pointer;
+margin: 5px;
+}
+
+.footer-twit {
+	background-image: url(image/twitter2.png);
+	background-position: center;
+}
+
+.footer-face {
+	background-image: url(image/facebook2.png);
+	background-position: center;
+}
+
+.footer-skype {
+	background-image: url(image/skype.png);
+	background-position: center;
+}
+
+.footer-be {
+	background-image: url(image/be.png);
+	background-position: center;
+	
+}
+.footer-in {
+	background-image: url(image/li2.png);
+	background-position: center;
 }
