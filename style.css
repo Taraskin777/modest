@@ -294,6 +294,11 @@ body {
 		justify-content: center;
 	}
 
+	.team-member {
+		width: 100%;
+	}
+
+	
 }
 
 @media (max-width:1210px) {
@@ -563,7 +568,8 @@ input {
 .photo {
 	position: relative;
 	border: none;
-
+	
+   
 }
 
 .white-back {
@@ -577,6 +583,10 @@ input {
 	opacity: 0.5;
 	display: none;
 
+}
+
+.team-photo {
+	width: 100%;
 }
 
 .photo:hover>.white-back {
@@ -616,9 +626,9 @@ input {
 
 .team-member {
 	background-color: #e1e6ea;
-	width: 263px;
+	max-width: 263px;
 	height: 374px;
-
+margin-bottom: 20px;
 
 }
 
@@ -639,6 +649,7 @@ input {
 
 .name-of-member {
 	padding: 20px;
+	width: 100%;
 
 }
 
@@ -665,12 +676,16 @@ input {
 
 }
 
-.lovely-image {}
+
 
 .image {
 	position: relative;
 	margin-bottom: 15px;
-
+	
+	
+}
+.work-image {
+	width: 100%;
 }
 
 .lovely-image:hover {
@@ -699,7 +714,7 @@ input {
 }
 
 .under-text {
-	width: 360px;
+	width: 350px;
 	height: 60px;
 	line-height: 60px;
 	padding-left: 20px;
@@ -774,6 +789,7 @@ input {
 	margin-bottom: 70px;
 }
 
+/* features--------------------------------- */
 
 .features {
 	background-color: #3a454d;
@@ -782,6 +798,7 @@ input {
 
 .features-card {
 	color: white;
+	
 }
 
 .features-image {
@@ -802,6 +819,8 @@ input {
 	color: #dcdfe1;
 }
 
+/* contact------------------------------ */
+
 .map {
 	display: flex;
 	flex-direction: column;
@@ -821,6 +840,8 @@ input {
 
 .send-box {
 	position: relative;
+	padding-top: 100px;
+	margin-bottom: 150px;
 }
 
 .send-but {
@@ -833,6 +854,7 @@ input {
 	border: 2px solid black;
 	cursor: pointer;
 	background-color: white;
+
 }
 
 .send-but:hover {
@@ -842,26 +864,29 @@ input {
 	transition: 0.5s;
 }
 
+/* footer------------------------------ */
+
+
 .footer {
 	background-color: #3c4147;
-	height: 85px;
+	min-height: 85px;
 	color: rgba(255, 255, 255, 0.788);
 	line-height: 85px;
 }
 
 .copyright {
 	font-size: 14px;
-	
+
 }
 
 
 .footer-socbut {
 	background: inherit;
-width: 25px;
-height: 25px;
-border: none;
-cursor: pointer;
-margin: 5px;
+	width: 25px;
+	height: 25px;
+	border: none;
+	cursor: pointer;
+	margin: 5px;
 }
 
 .footer-twit {
@@ -882,8 +907,9 @@ margin: 5px;
 .footer-be {
 	background-image: url(image/be.png);
 	background-position: center;
-	
+
 }
+
 .footer-in {
 	background-image: url(image/li2.png);
 	background-position: center;
