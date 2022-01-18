@@ -24,7 +24,7 @@ body {
 	flex-wrap: wrap;
 	margin-left: -15px;
 	margin-right: -15px;
-	justify-content: space-between;
+	/* justify-content: space-between; */
 	align-content: center;
 	align-items: center;
 
@@ -290,15 +290,77 @@ body {
 		display: none;
 	}
 
+
 	.row {
 		justify-content: center;
+		
 	}
 
-	.team-member {
+	.team-member .image {
 		width: 100%;
 	}
 
-	
+	.nav-mobile-menu {
+		width: 25px;
+		height: 15px;
+		position: relative;
+	}
+
+	.nav-mobile-menu span {
+		height: 1px;
+		left: 0;
+		right: 0;
+		position: absolute;
+		background-color: white;
+		transition: .25s ease-in-out;
+	}
+
+	.nav-mobile-menu span:nth-child(1) {
+		top: 3px;
+	}
+
+	.nav-mobile-menu span:nth-child(2) {
+		top: 7px;
+	}
+
+	.nav-mobile-menu span:nth-child(3) {
+		bottom: 3px;
+	}
+
+	.navigation {
+		position: fixed;
+		overflow: auto;
+		width: 280px;
+		max-width: 280px;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		transform: translateX(150%);
+		opacity: 0;
+		visibility: hidden;
+		
+
+	}
+
+	.nav-mobile-menu.active-menu span:nth-child(1) {
+		top: 50%;
+		transform: rotate(45deg);
+	}
+
+	.nav-mobile-menu.active-menu span:nth-child(2) {
+		top: 50%;
+		transform: rotate(-45deg);
+	}
+
+	.nav-mobile-menu.active-menu span:nth-child(3) {
+		transform: scale(0);
+	}
+	.navigation.active-menu {
+		opacity: 1;
+		visibility: visible;
+		top:20px;
+		transform: translateX(0);
+  }
 }
 
 @media (max-width:1210px) {
@@ -317,6 +379,9 @@ body {
 	height: 80px;
 	line-height: 80px;
 }
+
+
+
 
 .menu {
 	display: flex;
@@ -568,8 +633,13 @@ input {
 .photo {
 	position: relative;
 	border: none;
-	
-   
+	width: 100%;
+
+}
+
+.photo img {
+	width: 100%;
+	width: auto;
 }
 
 .white-back {
@@ -585,8 +655,9 @@ input {
 
 }
 
-.team-photo {
+ .team-photo {
 	width: 100%;
+	
 }
 
 .photo:hover>.white-back {
@@ -628,7 +699,7 @@ input {
 	background-color: #e1e6ea;
 	max-width: 263px;
 	height: 374px;
-margin-bottom: 20px;
+	margin-bottom: 20px;
 
 }
 
@@ -681,9 +752,10 @@ margin-bottom: 20px;
 .image {
 	position: relative;
 	margin-bottom: 15px;
-	
-	
+
+
 }
+
 .work-image {
 	width: 100%;
 }
@@ -798,13 +870,18 @@ margin-bottom: 20px;
 
 .features-card {
 	color: white;
-	
+
 }
 
 .features-image {
 	margin-bottom: 55px;
+	
 }
 
+.features-image img {
+	width: auto;
+	width: 100%;
+}
 .features-title {
 	margin-bottom: 30px;
 	font-size: 18px;
