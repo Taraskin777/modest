@@ -429,11 +429,11 @@ body {
 
 @media(min-width:768px) {
 	.menu li a:hover {
-		border: solid 2px #5b6168;
+		border: solid 2px #23b7a4;
 		border-radius: 5px;
 		transition: 0.5s;
 		padding: 2px 10px;
-		
+		color: #23b7a4;
 	}
 }
 
