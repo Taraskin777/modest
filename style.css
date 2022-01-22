@@ -434,7 +434,9 @@ body {
 		transition: 0.5s;
 		padding: 2px 10px;
 		color: #23b7a4;
+		
 	}
+
 }
 
 
@@ -442,7 +444,7 @@ body {
 .search {
 	display: flex;
 	width: 160px;
-	height: 20px;
+	height: 30px;
 	border: solid 2px #3c4147;
 	align-items: center;
 	border-radius: 5px;
@@ -671,7 +673,6 @@ input {
 
 .photo img {
 	width: 100%;
-	width: auto;
 }
 
 .white-back {
