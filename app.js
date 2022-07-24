@@ -26,12 +26,12 @@ function showModal() {
       modal.classList.add("show");
     }
   });
-  closemodal.addEventListener("click", () => {
-    modal.classList.add("hide");
-  });
 }
 
 showModal();
 
+closemodal.addEventListener("click", () => {
+  modal.classList.add("hide");
+});
 
 
