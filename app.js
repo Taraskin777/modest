@@ -17,21 +17,28 @@ const closemodal = document.querySelector(".modal__close");
 const sendbutton = document.querySelector(".send-but");
 
 function showModal() {
-  sendbutton.addEventListener("click", () => {
-    if (modal.classList.contains("hide")) {
-      modal.classList.add("show");
-      modal.classList.remove("hide");
-    } else {
-      modal.classList.remove("hide");
-      modal.classList.add("show");
-    }
-  });
+  modal.classList.add("show");
+  modal.classList.remove("hide");
+  clearInterval(showModalByTimeOut);
 }
 
-showModal();
-
-closemodal.addEventListener("click", () => {
+function closeModal() {
   modal.classList.add("hide");
-});
+  modal.classList.remove("show");
+}
 
+function showModalByScroll() {
+  if (
+    window.pageYOffset + document.documentElement.clientHeight >=
+    document.documentElement.scrollHeight
+  ) {
+    showModal();
+    window.removeEventListener("scroll", showModalByScroll);
+  }
+}
+window.addEventListener("scroll", showModalByScroll);
 
+sendbutton.addEventListener("click", showModal);
+closemodal.addEventListener("click", closeModal);
+
+const showModalByTimeOut = setTimeout(showModal, 6000);
