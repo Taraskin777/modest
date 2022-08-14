@@ -19,7 +19,7 @@ const sendbutton = document.querySelector(".send-but");
 function showModal() {
   modal.classList.add("show");
   modal.classList.remove("hide");
-  clearInterval(showModalByTimeOut);
+  clearInterval(modalTimerId);
 }
 
 function closeModal() {
@@ -30,15 +30,28 @@ function closeModal() {
 function showModalByScroll() {
   if (
     window.pageYOffset + document.documentElement.clientHeight >=
-    document.documentElement.scrollHeight
+    document.documentElement.scrollHeight - 1
   ) {
     showModal();
     window.removeEventListener("scroll", showModalByScroll);
   }
 }
+
 window.addEventListener("scroll", showModalByScroll);
 
 sendbutton.addEventListener("click", showModal);
 closemodal.addEventListener("click", closeModal);
 
-const showModalByTimeOut = setTimeout(showModal, 6000);
+modal.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    closeModal();
+  }
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.code === "Escape" && modal.classList.contains("show")) {
+    closeModal();
+  }
+});
+
+const modalTimerId = setTimeout(showModal, 6000);
